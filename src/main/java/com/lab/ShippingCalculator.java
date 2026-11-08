@@ -12,7 +12,6 @@ public class ShippingCalculator {
     if (weight <= 0) {
       throw new IllegalArgumentException("Weight must be positive");
     }
-    int BAD_Name = 1;
     double fee;
     if ("EXPRESS".equals(type)) {
       fee = weight * 5000 + 20000;
